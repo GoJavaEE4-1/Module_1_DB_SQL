@@ -20,8 +20,16 @@ CREATE TABLE projects (
 
     alter table developers add column project_id integer;
     ALTER TABLE developers ADD constraint project_id_fk FOREIGN KEY (project_id) REFERENCES projects(project_id);
-    
+
 
     update developers set project_id = 1 where project_id < 4;
     update developers set project_id = 1 where project_id >= 4 and project_id < 6;
     update developers set project_id = 1 where project_id >= 6;
+
+-- adding column cost to table projects
+
+    alter table projects add column project_cost real;
+
+-- adding column salary to table developers
+
+    alter table developers add column developer_salary real;
