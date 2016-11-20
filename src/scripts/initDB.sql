@@ -29,3 +29,7 @@ CREATE TABLE projects (
 -- adding column salary to table developers
 
     alter table developers add column developer_salary real;
+
+-- adding column cost to table projects
+
+    alter table projects add column project_cost real;
