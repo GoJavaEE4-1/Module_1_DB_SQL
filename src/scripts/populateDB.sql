@@ -1,13 +1,13 @@
 
 --inserting DATA into DEVELOPERS table
 
-insert into developers values (1, 'Ivan', 'Virsky', 'devmon@gmail.com', '+380224563454', 2);
-insert into developers values (2, 'John', 'Table', 'info@softlab.com', '+380231528414', 4);
-insert into developers values (3, 'Potty', 'Mist', 'ss@gmail.com', '+380294626396', 6);
-insert into developers values (4, 'David', 'Dorts', 'it.zone@zoneit.com', '+380270534522', 1);
-insert into developers values (5, 'Valiant', 'Miserty', 'it.zone@zoneit.com', '+380270534522', 2);
-insert into developers values (6, 'Jenny', 'Telly', 'it.zone@zoneit.com', '+380270534522', 1);
-insert into developers values (7, 'Roger', 'Brown', 'it.zone@zoneit.com', '+380270534522', 4);
+insert into developers values (1, 'Ivan', 'Virsky', 'devmon@gmail.com', '+380224563454', 2, 1);
+insert into developers values (2, 'John', 'Table', 'info@softlab.com', '+380231528414', 4, 3);
+insert into developers values (3, 'Potty', 'Mist', 'ss@gmail.com', '+380294626396', 6, 6);
+insert into developers values (4, 'David', 'Dorts', 'it.zone@zoneit.com', '+380270534522', 1, 7);
+insert into developers values (5, 'Valiant', 'Miserty', 'it.zone@zoneit.com', '+380270534522', 2, 2);
+insert into developers values (6, 'Jenny', 'Telly', 'it.zone@zoneit.com', '+380270534522', 1, 5);
+insert into developers values (7, 'Roger', 'Brown', 'it.zone@zoneit.com', '+380270534522', 4, 4);
 
 
 
