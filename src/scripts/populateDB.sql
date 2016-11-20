@@ -1,4 +1,13 @@
 
+--inserting DATA into DEVELOPERS table
+
+insert into developers values (1, 'Dev Monsters', 25, 'devmon@gmail.com', '+380224563454');
+insert into developers values (2, 'SoftLAB', 150, 'info@softlab.com', '+380231528414');
+insert into developers values (3, 'Skilled Skulls', 5, 'ss@gmail.com', '+380294626396');
+insert into developers values (4, 'IT-zone', 10, 'it.zone@zoneit.com', '+380270534522');
+
+
+
 --inserting DATA into PROJECTS table
 
 insert into projects values (1, 'Wedding agency', 20000, 'DevTeam 1');
