@@ -30,9 +30,17 @@ create table projects (
 
 --ALTER TABLE projects DROP COLUMN project_dev_team
 
--- Create table "COMPANIES"
+-- Create table "COMPANIES" - https://trello.com/c/tN3Ydzby
     CREATE TABLE homework_1."COMPANIES"(
     "COMPANY_ID" integer NOT NULL,
     "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "STAFF" integer,
     CONSTRAINT companies_pkey PRIMARY KEY ("COMPANY_ID"));
+    
+-- Create table "CUSTOMERS" - https://trello.com/c/W668ugNg
+    CREATE TABLE homework_1."CUSTOMERS"(
+    "CUSTOMER_ID" integer NOT NULL,
+    "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
+    "CITY" character varying(30) COLLATE pg_catalog."default",
+    "MOBILE PHONE" integer,
+    CONSTRAINT customers_pkey PRIMARY KEY ("CUSTOMER_ID")); 
