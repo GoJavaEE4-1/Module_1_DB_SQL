@@ -72,3 +72,27 @@ create table projects (
     "SKILL_ID" integer NOT NULL,
     "SKILL" character(30) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT skills_pkey PRIMARY KEY ("SKILL_ID"));
+    
+-- Companies are doing many projects at the same time, customers have many projects - https://trello.com/c/tmAYlZNF
+    CREATE TABLE homework_1."COMPANIES"(
+    "COMPANY_ID" integer NOT NULL,
+    "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
+    "STAFF" integer,
+    CONSTRAINT companies_pkey PRIMARY KEY ("COMPANY_ID"));
+    
+    CREATE TABLE homework_1."PROJECTS"(
+    "PROJECT_ID" integer NOT NULL,
+    "PROJECT_NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
+    "CUSTOMER_ID" integer,
+    CONSTRAINT "projects _pkey" PRIMARY KEY ("PROJECT_ID"),
+    CONSTRAINT "CUS_ID_FK" FOREIGN KEY ("CUSTOMER_ID")
+        REFERENCES homework_1."CUSTOMERS" ("CUSTOMER_ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION);
+    
+   	CREATE TABLE homework_1."CUSTOMERS"(
+    "CUSTOMER_ID" integer NOT NULL,
+    "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
+    "CITY" character varying(30) COLLATE pg_catalog."default",
+    "MOBILE PHONE" integer,
+    CONSTRAINT customers_pkey PRIMARY KEY ("CUSTOMER_ID"));
