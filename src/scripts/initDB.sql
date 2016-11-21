@@ -43,4 +43,32 @@ create table projects (
     "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "CITY" character varying(30) COLLATE pg_catalog."default",
     "MOBILE PHONE" integer,
-    CONSTRAINT customers_pkey PRIMARY KEY ("CUSTOMER_ID")); 
+    CONSTRAINT customers_pkey PRIMARY KEY ("CUSTOMER_ID"));
+    
+-- Разработчики могут иметь много навыков - https://trello.com/c/xJf5WyL3
+    CREATE TABLE homework_1."DEVELOPERS"(
+    "DEVELOPERS_ID" integer NOT NULL,
+    "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
+    "PROJECT_ID" integer,
+    CONSTRAINT developers_pkey PRIMARY KEY ("DEVELOPERS_ID"),
+    CONSTRAINT "PROJECT_ID_FK" FOREIGN KEY ("PROJECT_ID")
+        REFERENCES homework_1."PROJECTS" ("PROJECT_ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION);
+        
+    CREATE TABLE homework_1."DEV_SKI"(
+    "DEV_ID" integer NOT NULL,
+    "SKI_ID" integer NOT NULL,
+    CONSTRAINT "DEV_ID_FK" FOREIGN KEY ("DEV_ID")
+        REFERENCES homework_1."DEVELOPERS" ("DEVELOPERS_ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "SKI_ID_FK" FOREIGN KEY ("SKI_ID")
+        REFERENCES homework_1."SKILLS" ("SKILL_ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION);
+        
+   	CREATE TABLE homework_1."SKILLS"(
+    "SKILL_ID" integer NOT NULL,
+    "SKILL" character(30) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT skills_pkey PRIMARY KEY ("SKILL_ID"));
