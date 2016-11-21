@@ -26,9 +26,7 @@ CREATE TABLE projects (
     update developers set project_id = 2 where project_id >= 4 and project_id < 6;
     update developers set project_id = 3 where project_id >= 6;
 
--- adding column salary to table developers
 
-    alter table developers add column developer_salary real;
 
 -- adding column cost to table projects
 
