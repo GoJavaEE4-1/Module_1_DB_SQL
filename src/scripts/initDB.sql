@@ -33,3 +33,10 @@ CREATE TABLE projects (
 -- adding column cost to table projects
 
     alter table projects add column project_cost real;
+    
+-- Create table "COMPANIES"
+    CREATE TABLE homework_1."COMPANIES"(
+    "COMPANY_ID" integer NOT NULL,
+    "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
+    "STAFF" integer,
+    CONSTRAINT companies_pkey PRIMARY KEY ("COMPANY_ID"));
