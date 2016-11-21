@@ -26,9 +26,10 @@ CREATE TABLE projects (
 --    update developers set project_id = 2 where project_id >= 4 and project_id < 6;
 --    update developers set project_id = 3 where project_id >= 6;
 
+--deleting column from table
 
+--ALTER TABLE projects DROP COLUMN project_dev_team
 
-    
 -- Create table "COMPANIES"
     CREATE TABLE homework_1."COMPANIES"(
     "COMPANY_ID" integer NOT NULL,
