@@ -9,7 +9,7 @@ create table developers (
     project_id_fk serial REFERENCES projects(project_id)
 );
 
-CREATE TABLE projects (
+create table projects (
     project_id serial primary key,
     project_name character varying(30) NOT NULL,
     project_budget numeric,
