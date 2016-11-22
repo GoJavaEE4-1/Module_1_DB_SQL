@@ -31,14 +31,14 @@ create table projects (
 --ALTER TABLE projects DROP COLUMN project_dev_team
 
 -- Create table "COMPANIES" - https://trello.com/c/tN3Ydzby
-    CREATE TABLE homework_1."COMPANIES"(
+    CREATE TABLE "COMPANIES"(
     "COMPANY_ID" integer NOT NULL,
     "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "STAFF" integer,
     CONSTRAINT companies_pkey PRIMARY KEY ("COMPANY_ID"));
     
 -- Create table "CUSTOMERS" - https://trello.com/c/W668ugNg
-    CREATE TABLE homework_1."CUSTOMERS"(
+    CREATE TABLE "CUSTOMERS"(
     "CUSTOMER_ID" integer NOT NULL,
     "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "CITY" character varying(30) COLLATE pg_catalog."default",
@@ -46,7 +46,7 @@ create table projects (
     CONSTRAINT customers_pkey PRIMARY KEY ("CUSTOMER_ID"));
     
 -- Разработчики могут иметь много навыков - https://trello.com/c/xJf5WyL3
-    CREATE TABLE homework_1."DEVELOPERS"(
+    CREATE TABLE "DEVELOPERS"(
     "DEVELOPERS_ID" integer NOT NULL,
     "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "PROJECT_ID" integer,
@@ -56,7 +56,7 @@ create table projects (
         ON UPDATE NO ACTION
         ON DELETE NO ACTION);
         
-    CREATE TABLE homework_1."DEV_SKI"(
+    CREATE TABLE "DEV_SKI"(
     "DEV_ID" integer NOT NULL,
     "SKI_ID" integer NOT NULL,
     CONSTRAINT "DEV_ID_FK" FOREIGN KEY ("DEV_ID")
@@ -68,19 +68,19 @@ create table projects (
         ON UPDATE NO ACTION
         ON DELETE NO ACTION);
         
-   	CREATE TABLE homework_1."SKILLS"(
+   	CREATE TABLE "SKILLS"(
     "SKILL_ID" integer NOT NULL,
     "SKILL" character(30) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT skills_pkey PRIMARY KEY ("SKILL_ID"));
     
 -- Companies are doing many projects at the same time, customers have many projects - https://trello.com/c/tmAYlZNF
-    CREATE TABLE homework_1."COMPANIES"(
+    CREATE TABLE "COMPANIES"(
     "COMPANY_ID" integer NOT NULL,
     "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "STAFF" integer,
     CONSTRAINT companies_pkey PRIMARY KEY ("COMPANY_ID"));
     
-    CREATE TABLE homework_1."PROJECTS"(
+    CREATE TABLE "PROJECTS"(
     "PROJECT_ID" integer NOT NULL,
     "PROJECT_NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "CUSTOMER_ID" integer,
@@ -90,7 +90,7 @@ create table projects (
         ON UPDATE NO ACTION
         ON DELETE NO ACTION);
     
-   	CREATE TABLE homework_1."CUSTOMERS"(
+   	CREATE TABLE "CUSTOMERS"(
     "CUSTOMER_ID" integer NOT NULL,
     "NAME" character(30) COLLATE pg_catalog."default" NOT NULL,
     "CITY" character varying(30) COLLATE pg_catalog."default",
