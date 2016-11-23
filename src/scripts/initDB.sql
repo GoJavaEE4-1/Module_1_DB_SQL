@@ -22,8 +22,8 @@
     );
     
     create table companies (
-			company_ID int4 NOT NULL,
+			company_id int4 NOT NULL,
 			name char(30) collate default NOT NULL,
 			staff int4,
-			constraint companies_pkey primary key (company_ID)
+			constraint companies_pkey primary key (company_id)
 	); 
