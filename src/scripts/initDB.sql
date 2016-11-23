@@ -6,7 +6,6 @@
          developer_last_name character varying(15) not null,
          developer_email character varying(50) not null,
          developer_phone character varying(15) not null,
-         developer_experience integer not null,
          project_id_fk integer references projects(project_id),
          company_id_fk integer references companies(company_id)
      );
