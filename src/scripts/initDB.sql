@@ -20,3 +20,10 @@
             customer_id serial primary key,
             customer_name varchar not null
     );
+    
+    create table companies (
+			company_ID int4 NOT NULL,
+			name char(30) collate default NOT NULL,
+			staff int4,
+			constraint companies_pkey primary key (company_ID)
+	); 
