@@ -6,12 +6,17 @@
             skill_name varchar not null
     );
 
-
      create table customers(
             customer_id serial primary key,
             customer_name varchar not null
     );
 
+     create table companies (
+			company_id int4 NOT NULL,
+			name char(30) collate default NOT NULL,
+			staff int4,
+			constraint companies_pkey primary key (company_id)
+	 );
 
     create table projects (
              project_id serial primary key,
@@ -20,7 +25,6 @@
              company_id_fk integer references companies(company_id),
              customer_id_fk integer references customers(customer_id)
          );
-
 
      create table developers (
                developer_id serial primary key,
@@ -33,10 +37,5 @@
            );
 
 
-    create table companies (
-			company_id int4 NOT NULL,
-			name char(30) collate default NOT NULL,
-			staff int4,
-			constraint companies_pkey primary key (company_id)
-	);
+
 
