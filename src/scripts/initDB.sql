@@ -39,3 +39,5 @@
             constraint dev_id_fk foreign key (dev_id) references developers (developer_id) on delete no action on update no action,
             constraint sk_id_fk foreign key (sk_id) references skills (skill_id) on delete no action on update no action,
     );
+
+    alter table projects add production_date date;
