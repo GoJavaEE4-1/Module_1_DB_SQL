@@ -1,22 +1,36 @@
 
 --inserting DATA into DEVELOPERS table
 
-insert into developers values (1, 'Ivan', 'Virsky', 'devmon@gmail.com', '+380224563454', 2, 1);
-insert into developers values (2, 'John', 'Table', 'info@softlab.com', '+380231528414', 4, 3);
-insert into developers values (3, 'Potty', 'Mist', 'ss@gmail.com', '+380294626396', 6, 6);
-insert into developers values (4, 'David', 'Dorts', 'it.zone@zoneit.com', '+380270534522', 1, 7);
-insert into developers values (5, 'Valiant', 'Miserty', 'it.zone@zoneit.com', '+380270534522', 2, 2);
-insert into developers values (6, 'Jenny', 'Telly', 'it.zone@zoneit.com', '+380270534522', 1, 5);
-insert into developers values (7, 'Roger', 'Brown', 'it.zone@zoneit.com', '+380270534522', 4, 4);
+insert into developers (developer_first_name, developer_last_name, developer_email, developer_phone, project_id_fk, company_id_fk)
+values ('Ivan', 'Virsky', 'devmon@gmail.com', '+380224563454', 2, 1);
+insert into developers (developer_first_name, developer_last_name, developer_email, developer_phone, project_id_fk, company_id_fk)
+values ('John', 'Table', 'info@softlab.com', '+380231528414', 4, 3);
+insert into developers (developer_first_name, developer_last_name, developer_email, developer_phone, project_id_fk, company_id_fk)
+values ('Potty', 'Mist', 'ss@gmail.com', '+380294626396', 6, 6);
+insert into developers (developer_first_name, developer_last_name, developer_email, developer_phone, project_id_fk, company_id_fk)
+values ('David', 'Dorts', 'it.zone@zoneit.com', '+380270534522', 1, 7);
+insert into developers (developer_first_name, developer_last_name, developer_email, developer_phone, project_id_fk, company_id_fk)
+values ('Valiant', 'Miserty', 'it.zone@zoneit.com', '+380270534522', 2, 2);
+insert into developers (developer_first_name, developer_last_name, developer_email, developer_phone, project_id_fk, company_id_fk)
+values ('Jenny', 'Telly', 'it.zone@zoneit.com', '+380270534522', 1, 5);
+insert into developers (developer_first_name, developer_last_name, developer_email, developer_phone, project_id_fk, company_id_fk)
+values ('Roger', 'Brown', 'it.zone@zoneit.com', '+380270534522', 4, 4);
 
 
 
 --inserting DATA into PROJECTS table
 
-insert into projects values (1, 'Wedding agency', 20000, 'DevTeam 1');
-insert into projects values (2, 'Online hotel booking', 30000, 'DevTeam 2');
-insert into projects values (3, 'Online currency converter', 5000, 'DevTeam 3');
-insert into projects values (4, 'Social advertising', 5000, 'DevTeam 4');
-insert into projects values (5, 'Flight tickets', 10000, 'DevTeam 5');
-insert into projects values (6, 'Web-banking', 30000, 'DevTeam 6');
-insert into projects values (7, 'Chinese food market', 15000, 'DevTeam 7');
+insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
+values ('Wedding agency', 'Some project description', 20000, 1, 2);
+insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
+values ('Online hotel booking',  'Some project description', 30000, 2, 3);
+insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
+values ('Online currency converter',  'Some project description', 5000, 4, 2);
+insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
+values ('Social advertising',  'Some project description', 5000, 1, 3);
+insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
+values ('Flight tickets',  'Some project description', 10000, 3, 4);
+insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
+values ('Web-banking',  'Some project description', 30000, 4, 2);
+insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
+values ('Chinese food market',  'Some project description', 15000, 5, 3);
