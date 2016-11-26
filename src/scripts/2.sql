@@ -1,12 +1,12 @@
 -- 2) To find the most expensive project (based on the salary of developers) - https://trello.com/c/81yF3qR5
-	SELECT
-	"PROJECTS"."PROJECT_NAME",
-	SUM ("DEVELOPERS"."SALARY")
-	FROM
-	"PROJECTS"
-	INNER JOIN "DEVELOPERS" ON "DEVELOPERS"."PROJECT_ID" = "PROJECTS"."PROJECT_ID"
-	GROUP BY
-	"PROJECTS"."PROJECT_NAME"
-	ORDER BY
-	SUM DESC
-	LIMIT 1;
+select
+projects.project_name,
+sum(developers.salary)
+from
+projects
+inner join developers on developers.project_id = projects.project_id
+group by
+projects.project_name
+order by
+sum desc
+limit 1
