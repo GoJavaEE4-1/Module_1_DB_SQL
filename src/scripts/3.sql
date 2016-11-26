@@ -3,7 +3,8 @@ select
 	skills.skill,
 	sum( developers.salary )
 from
-	skills inner join dev_ski on dev_ski.ski_id = skills.skill_id
+	skills 
+	inner join dev_ski on dev_ski.ski_id = skills.skill_id
 	inner join developers on dev_ski.dev_id = developers.developer_id
 where
 	skills.skill = 'Java'
