@@ -9,10 +9,10 @@
     );
 
      create table companies (
-			company_id int4 not null,
-			name char(30) collate default not null,
-			staff int4,
-			constraint companies_pkey primary key (company_id)
+			company_id int not null,
+			name varchar(30) not null,
+			staff int null,
+			constraint companies_pk primary key (company_id)
 	);
 
     create table projects (
