@@ -34,3 +34,23 @@ insert into projects (project_name, project_description, project_profit, company
 values ('Web-banking',  'Some project description', 30000, 4, 2);
 insert into projects (project_name, project_description, project_profit, company_id_fk, customer_id_fk)
 values ('Chinese food market',  'Some project description', 15000, 5, 3);
+
+
+
+--inserting DATA into COMPANIES table
+insert into companies (company_id,"name",staff) values (0,'epam',4500);
+insert into companies (company_id,"name",staff) values (1,'softserve',4171);
+insert into companies (company_id,"name",staff) values (2,'luxoft',3735);
+insert into companies (company_id,"name",staff) values (3,'globallogic',2751);
+insert into companies (company_id,"name",staff) values (4,'ciklum',2500);
+insert into companies (company_id,"name",staff) values (5,'nix solutions ltd.',1500);
+
+
+
+
+
+
+
+
+
+
