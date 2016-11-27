@@ -31,26 +31,26 @@ insert into companies (company_name, company_staff) values ('nix solutions ltd.'
 --inserting DATA into PROJECTS table
 
 insert into projects
-(project_name, project_description, project_profit, company_id_fk, customer_id_fk)
-values ('Wedding agency', 'Some project description', 20000, 1, 2);
+(project_name, project_description, company_id_fk, customer_id_fk)
+values ('Wedding agency', 'Some project description', 1, 2);
 insert into projects
-(project_name, project_description, project_profit, company_id_fk, customer_id_fk)
-values ('Online hotel booking',  'Some project description', 30000, 2, 3);
+(project_name, project_description, company_id_fk, customer_id_fk)
+values ('Online hotel booking',  'Some project description', 2, 3);
 insert into projects
-(project_name, project_description, project_profit, company_id_fk, customer_id_fk)
-values ('Online currency converter',  'Some project description', 5000, 4, 2);
+(project_name, project_description, company_id_fk, customer_id_fk)
+values ('Online currency converter',  'Some project description', 4, 2);
 insert into projects
-(project_name, project_description, project_profit, company_id_fk, customer_id_fk)
-values ('Social advertising',  'Some project description', 5000, 1, 3);
+(project_name, project_description, company_id_fk, customer_id_fk)
+values ('Social advertising',  'Some project description', 1, 3);
 insert into projects
-(project_name, project_description, project_profit, company_id_fk, customer_id_fk)
-values ('Flight tickets',  'Some project description', 10000, 3, 4);
+(project_name, project_description, company_id_fk, customer_id_fk)
+values ('Flight tickets',  'Some project description', 3, 4);
 insert into projects
-(project_name, project_description, project_profit, company_id_fk, customer_id_fk)
-values ('Web-banking',  'Some project description', 30000, 4, 2);
+(project_name, project_description, company_id_fk, customer_id_fk)
+values ('Web-banking',  'Some project description', 4, 2);
 insert into projects
-(project_name, project_description, project_profit, company_id_fk, customer_id_fk)
-values ('Chinese food market',  'Some project description', 15000, 5, 3);
+(project_name, project_description, company_id_fk, customer_id_fk)
+values ('Chinese food market',  'Some project description', 5, 3);
 
 --inserting DATA into DEVELOPERS table
 

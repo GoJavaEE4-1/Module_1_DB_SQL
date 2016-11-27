@@ -2,12 +2,12 @@
 
 
 
-	select customer_name, company_name, min (project_profit) from customers c
+	select customer_name, company_name, min (project_cost) from customers c
     inner join projects p on c.customer_id = p.customer_id_fk
     left join companies on companies.company_id = p.company_id_fk
-    where project_profit = (select min(project_profit) from projects)
+    where project_cost = (select min(project_cost) from projects)
     group by customer_name, company_name
-    order by min (project_profit);
+    order by min (project_cost);
 
 
 

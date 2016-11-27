@@ -19,7 +19,6 @@ create table projects (
     project_id serial primary key,
     project_name character varying(30) not null,
     project_description text,
-    project_profit numeric,
     company_id_fk integer references companies(company_id),
     customer_id_fk integer references customers(customer_id)
 );

@@ -8,3 +8,5 @@ from
 	inner join developers on dev_skills.developer_id = developers.developer_id
 where skills.skill_name = 'Java'
 group by skills.skill_id
+
+
