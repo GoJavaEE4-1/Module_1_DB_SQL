@@ -9,10 +9,10 @@ create table customers(
 );
 
 create table companies (
-		company_id serial not null,
-		company_name varchar(30) not null,
-		company_staff int not null,
-		constraint companies_pk primary key (company_id)
+    company_id serial not null,
+    company_name varchar(30) not null,
+    company_staff int not null,
+    constraint companies_pk primary key (company_id)
 );
 
 create table projects (
@@ -38,8 +38,10 @@ create table developers (
 create table dev_skills(
     developer_id integer not null,
     skill_id integer not null,
-    developer_id_fk integer references developers (developer_id) on delete no action on update no action,
-    skill_id_fk integer references skills (skill_id) on delete no action on update no action
+    developer_id_fk integer references developers (developer_id)
+    on delete no action on update no action,
+    skill_id_fk integer references skills (skill_id)
+    on delete no action on update no action
 );
 
 
