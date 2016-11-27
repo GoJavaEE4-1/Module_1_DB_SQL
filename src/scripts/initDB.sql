@@ -34,12 +34,6 @@ create table developers (
     company_id_fk integer references companies(company_id)
 );
 
--- create table dev_skills(
---     developer_id integer not null,
---     skill_id integer not null,
---     constraint developer_id_fk foreign key (developer_id) references developers (developer_id) on delete no action on update no action,
---     constraint skill_id_fk foreign key (skill_id) references skills (skill_id) on delete no action on update no action
--- );
 
 create table dev_skills(
     developer_id integer not null,
