@@ -83,6 +83,21 @@ insert into developers
 developer_phone, project_id_fk, company_id_fk)
 values ('Roger', 'Brown', 'it.zone@zoneit.com', '+380270534522', 4, 4);
 
+--inserting DATA into DEV_SKILLS table
+
+insert into dev_skills VALUES (1, 2, 1, 2);
+insert into dev_skills VALUES (1, 1, 1, 1);
+insert into dev_skills VALUES (1, 3, 1, 3);
+insert into dev_skills VALUES (1, 2, 1, 2);
+insert into dev_skills VALUES (2, 2, 2, 2);
+insert into dev_skills VALUES (3, 1, 3, 1);
+insert into dev_skills VALUES (3, 3, 3, 3);
+insert into dev_skills VALUES (4, 1, 4, 1);
+insert into dev_skills VALUES (5, 2, 5, 2);
+insert into dev_skills VALUES (6, 5, 6, 5);
+insert into dev_skills VALUES (6, 1, 6, 1);
+insert into dev_skills VALUES (6, 3, 6, 3);
+insert into dev_skills VALUES (7, 2, 7, 2);
 
 
 
